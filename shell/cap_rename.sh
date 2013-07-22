@@ -14,6 +14,7 @@ if [ "$RES" == "hd" ]; then
   v4l2-ctl --set-fmt-video=width=1920,height=1080,pixelformat=1
 else
 	v4l2-ctl --set-fmt-video=width=640,height=480,pixelformat=1
+fi
 
 #framerate defaults to 30
 v4l2-ctl --set-parm=30
