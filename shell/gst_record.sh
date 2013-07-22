@@ -1,0 +1,1 @@
+gst-launch -v -e uvch264_src device=/dev/video0 name=src auto-start=true src.vidsrc ! video/x-h264,width=1920,height=1080,framerate=30/1 ! legacyh264parse ! mp4mux ! filesink location=/home/linux/$(date +%Y%m%d-%H%M)-webcam.mp4
